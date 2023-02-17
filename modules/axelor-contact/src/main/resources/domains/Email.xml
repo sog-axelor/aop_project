@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_5.4.xsd">
+  
+  <module package="contact" name="com.axelor.contact.db"/>
+  
+  <entity name="Email" cacheable="true">
+  	
+  	<string name="email" required="true" unique="true" namecolumn="true" />
+  	<boolean name="primary" column="is_primary" />
+  	<boolean name="optOut"  title="Opted out"/>
+  	<boolean name="invalid" />
+	<many-to-one ref="Contact" name="contact" required="true"/>			<!--1.	  -->
+  </entity>
+   </domain-models>
+  

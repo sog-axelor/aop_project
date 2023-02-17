@@ -1,0 +1,4 @@
+rootProject.name = 'aop-project'
+
+//add modules
+include "modules:axelor-contact"
