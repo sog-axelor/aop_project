@@ -1,4 +1,5 @@
 rootProject.name = 'aop-project'
 
 //add modules
-include "modules:axelor-contact"
+include "modules:demo-contact"
+include "modules:demo-sale"

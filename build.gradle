@@ -40,7 +40,8 @@ allprojects {
 
 dependencies {
   // add module dependencies
-  implementation project(':modules:axelor-contact')
+  implementation project("modules:demo-contact")
+ implementation project("modules:demo-sale")
 }
 
 wrapper {
